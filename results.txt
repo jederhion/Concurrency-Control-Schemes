@@ -1,0 +1,131 @@
+UpdateCTestConfiguration  from :/home/chujun/cmsc624-assignment-2-jederhion/a2/build/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/home/chujun/cmsc624-assignment-2-jederhion/a2/build/DartConfiguration.tcl
+Test project /home/chujun/cmsc624-assignment-2-jederhion/a2/build
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: lock_manager_test
+
+1: Test command: /home/chujun/cmsc624-assignment-2-jederhion/a2/build/src/lock_manager_test
+1: Test timeout computed to be: 10000000
+1: [ LockManagerA_SimpleLocking ] [1;32mBEGIN[0m
+1: [ LockManagerA_SimpleLocking ] [1;32mPASS[0m
+1: [ LockManagerA_LocksReleasedOutOfOrder ] [1;32mBEGIN[0m
+1: [ LockManagerA_LocksReleasedOutOfOrder ] [1;32mPASS[0m
+1: [ LockManagerB_SimpleLocking ] [1;32mBEGIN[0m
+1: [ LockManagerB_SimpleLocking ] [1;32mPASS[0m
+1: [ LockManagerB_LocksReleasedOutOfOrder ] [1;32mBEGIN[0m
+1: [ LockManagerB_LocksReleasedOutOfOrder ] [1;32mPASS[0m
+1/3 Test #1: lock_manager_test ................   Passed    0.01 sec
+test 2
+    Start 2: txn_processor_test
+
+2: Test command: /home/chujun/cmsc624-assignment-2-jederhion/a2/build/src/txn_processor_test
+2: Test timeout computed to be: 10000000
+2: 		-------------------------------------------------------------------
+2: 		                Average Transaction Duration
+2: 		-------------------------------------------------------------------
+2: 		0.1ms		1ms		10ms		(0.1ms, 1ms, 10ms)
+2: 		-------------------------------------------------------------------
+2: 		            Low contention Read only (5 records)
+2: 		-------------------------------------------------------------------
+2:  Serial   	9754.12		997.442		99.8761		313.331	
+2:  Locking A	47640		5057.34		623.305		1784.9	
+2:  Locking B	47076.4		5036.23		615.272		1833.79	
+2:  OCC      	45383.3		5152.1		572.087		1854.3	
+2:  OCC-P    	45241.6		5273.46		543.673		1703.53	
+2:  MVCC     	44004.2		5204.09		593.447		2013.22	
+2: 
+2: 		            Low contention Read only (30 records)
+2: 		-------------------------------------------------------------------
+2:  Serial   	8617.16		982.844		99.6928		309.315	
+2:  Locking A	34113.6		5180.58		553.398		1608.77	
+2:  Locking B	32694.1		5052.81		588.772		1906.97	
+2:  OCC      	39619.1		4994.6		589.326		1958.89	
+2:  OCC-P    	40545.2		4915.37		529.835		1703.11	
+2:  MVCC     	32195		5237.39		593.258		1796.85	
+2: 
+2: 		            High contention Read only (5 records)
+2: 		-------------------------------------------------------------------
+2:  Serial   	9921.99		998.436		99.8745		308.761	
+2:  Locking A	18645.2		2435.76		259.186		600.432	
+2:  Locking B	44830.9		5090.74		512.641		1660.8	
+2:  OCC      	44357.2		4909.16		570.441		1861.88	
+2:  OCC-P    	46126.9		4973.55		565.995		1928.66	
+2:  MVCC     	45490.5		5056.12		538.392		1817.11	
+2: 
+2: 		            High contention Read only (30 records)
+2: 		-------------------------------------------------------------------
+2:  Serial   	9475.66		993.27		99.8156		322.661	
+2:  Locking A	6513.52		945.682		99.3701		281.194	
+2:  Locking B	27487.4		4639.38		528.293		1598.26	
+2:  OCC      	40928.8		5162.47		585.737		1852.71	
+2:  OCC-P    	43856.6		5201.68		570.994		1700.79	
+2:  MVCC     	41427.7		4866.68		571.933		1653.57	
+2: 
+2: 		            Low contention read-write (5 records)
+2: 		-------------------------------------------------------------------
+2:  Serial   	9537.28		992.468		99.8821		305.554	
+2:  Locking A	45894.7		5076.94		589.005		1878.2	
+2:  Locking B	46958.7		5292.69		571.036		1763.12	
+2:  OCC      	44790.5		4864.88		629.178		1757.05	
+2:  OCC-P    	41331.6		4887.59		542.017		1869.76	
+2:  MVCC     	42766		4954.73		590.779		1854.21	
+2: 
+2: 		            Low contention read-write (10 records)
+2: 		-------------------------------------------------------------------
+2:  Serial   	9152.81		989.416		99.7883		310.902	
+2:  Locking A	46981.4		4932.82		599.766		1760.6	
+2:  Locking B	46652.3		4855.66		595		1555.33	
+2:  OCC      	43248.1		5076.57		541.694		1726.82	
+2:  OCC-P    	41625		5250.27		585.463		1664.48	
+2:  MVCC     	40049.1		4943.04		596.212		1797.34	
+2: 
+2: 		            High contention read-write (5 records)
+2: 		-------------------------------------------------------------------
+2:  Serial   	9797.91		997.451		99.8745		275.188	
+2:  Locking A	16351.5		2401.38		279.99		610.698	
+2:  Locking B	18812.6		2346.74		260		592.988	
+2:  OCC      	23546.8		2474.27		274.838		531.989	
+2:  OCC-P    	43885		5045.36		580.737		1989.43	
+2:  MVCC     	17804.2		1851.37		191.138		453.797	
+2: 
+2: 		            High contention read-write (10 records)
+2: 		-------------------------------------------------------------------
+2:  Serial   	9657.02		995.56		99.8459		287.852	
+2:  Locking A	8965.66		1256.78		134.969		370.84	
+2:  Locking B	8863.35		1237.9		129.749		399.4	
+2:  OCC      	12655.3		1231.34		141.594		285.795	
+2:  OCC-P    	41548.7		4907		572.137		1615.92	
+2:  MVCC     	12256.9		1232.45		127.552		279.924	
+2: 
+2: 		            High contention mixed read only/read-write
+2: 		-------------------------------------------------------------------
+2:  Serial   	11753.4		1249.18		123.753		368.198	
+2:  Locking A	7459.63		1161.25		130.361		376.218	
+2:  Locking B	26343.2		6242.77		737.016		2184.92	
+2:  OCC      	27890.3		3003.2		327.848		639.629	
+2:  OCC-P    	50276.7		6004.06		729.956		2299.2	
+2:  MVCC     	51147.9		6147.04		695.923		2125.96	
+2: 
+2/3 Test #2: txn_processor_test ...............   Passed  929.39 sec
+test 3
+    Start 3: txn_types_test
+
+3: Test command: /home/chujun/cmsc624-assignment-2-jederhion/a2/build/src/txn_types_test
+3: Test timeout computed to be: 10000000
+3: [ NoopTest ] [1;32mBEGIN[0m
+3: [ NoopTest ] [1;32mPASS[0m
+3: [ PutTest ] [1;32mBEGIN[0m
+3: [ PutTest ] [1;32mPASS[0m
+3: [ PutMultipleTest ] [1;32mBEGIN[0m
+3: [ PutMultipleTest ] [1;32mPASS[0m
+3/3 Test #3: txn_types_test ...................   Passed    0.70 sec
+
+100% tests passed, 0 tests failed out of 3
+
+Total Test time (real) = 930.10 sec
